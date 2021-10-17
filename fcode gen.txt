@@ -1,0 +1,14 @@
+scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "codegen:watch": "npm generate --watch"
+
+
+targeting these line for code gen
+
+npm run codegen
+ sometime
+npm run generate depend upon vaible in package.json

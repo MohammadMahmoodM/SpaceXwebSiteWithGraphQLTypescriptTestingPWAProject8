@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@graphql-codegen/cli": "^2.2.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "@types/jest": "^26.0.24",
     "@types/node": "^12.20.33",
+    "graphql": "^15.6.1",
+    "graphql-tag": "^2.12.5",
     "history": "^4.10.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "graphql-codegen --config codegen.js",
+    "generate:watch": "npm generate --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -43,8 +48,16 @@
     ]
   },
   "devDependencies": {
+    "@apollo/client": "^3.4.16",
+    "@graphql-codegen/cli": "2.2.1",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/typescript": "2.2.4",
+    "@graphql-codegen/typescript-operations": "^2.1.8",
+    "@graphql-codegen/typescript-react-apollo": "3.1.6",
+    "@types/graphql": "^14.5.0",
     "@types/react": "^17.0.29",
     "@types/react-dom": "^17.0.9",
-    "@types/react-router-dom": "^5.3.1"
+    "@types/react-router-dom": "^5.3.1",
+    "apollo": "^2.33.6"
   }
 }
