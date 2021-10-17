@@ -1,0 +1,107 @@
+.container {
+    color: rgb(96, 89, 89);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 4px whitesmoke;
+}
+.missionPatchSmall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+}
+.missionPatchSmall img {
+    width: 95%;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+
+    user-select: none;
+}
+.missionPatchSmall img:hover {
+    transform: scale(1,1);
+}
+.missionPatchSmall a {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+.launchData {
+    flex-basis: 100%;
+}
+.flightNumberandStatus{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.flightNumberandStatus p:last-of-type {
+    margin: 0 auto;
+}
+.success{
+    color: chartreuse;
+}
+.failure{
+    color: crimson;
+}
+.links{
+    display: flex;
+    flex-basis: 100%; /*dont know purpose yet*/
+    margin-top: 10px;
+}
+.links span{
+    margin-left: 15px;
+    font-size: 0.8em;
+    user-select: none;
+}
+.links span:first-of-type{ /*mean first span in links*/
+    margin-left: 0;
+    margin-right: auto;
+}
+.links span{
+    transition: transform 150ms ease-in-out;
+}
+
+.links span:hover{
+    transform: scale(1.1);
+}
+.detailsLink{
+    color: rgb(86, 18, 18);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.detailsLink a{
+    color: rgb(206, 117, 117);
+}
+.videoLink, .articleLink{
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.videoLink {
+    color: tomato;
+}
+.articleLink {
+    color: rgb(86, 86, 72);
+}
+
+@media (max-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+    .missionPatchSmall{
+        margin: 0 0 20px 0;
+        width: auto;
+        height: 200px;
+        flex-grow: 1;
+    }
+    .missionPatchSmall img{
+        height: 95%;
+        width: auto;
+    }
+}

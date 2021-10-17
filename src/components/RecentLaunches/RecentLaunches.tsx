@@ -2,6 +2,8 @@ import {Message} from '../../react-app-env.d' // By default is not write .d you 
 import { useRecentLaunchesIdsQuery } from "../../api/index";
 // component
 import { LaunchCard } from '../LaunchCards/LaunchCards';
+import styles from './RecentLaunches.module.css';
+
 export const RecentLaunches = () => {
     const previousFightsToShowonHome = 5;
     const {data, loading, error, networkStatus} = useRecentLaunchesIdsQuery({variables : {count : previousFightsToShowonHome}});
@@ -10,7 +12,7 @@ export const RecentLaunches = () => {
     
     const ids = (data && data.launches) ? data.launches.map(launch => launch?.flight_number ) : []; //if data and data.launches are there then map the fhlight number from launches and all otherarray from data
     return (
-        <div>
+        <div className={styles.container}>
             <h3>Previous Recent Launches</h3>
             <div>
                 {loading? Message.LOADING : networkStatus === 8 ? Message.OFFLINE : error ? Message.ERROR : ids.map(id=>id &&  <LaunchCard key={id} flightNumber={id}/> )}

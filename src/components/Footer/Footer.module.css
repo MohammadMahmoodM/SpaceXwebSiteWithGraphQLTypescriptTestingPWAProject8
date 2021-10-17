@@ -1,0 +1,87 @@
+.container {
+    border-top: 5px dotted crimson;
+    background-color: #711271;
+    color: #000;
+    padding: 40px 7%;
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+
+.localLinks{
+    width: 50%;
+}
+.localLinks ul{
+    display: flex;
+    flex-direction: column;
+}
+.localLinks ul a {  /*a should not be here*/
+    color: darkseagreen;
+    text-decoration: none;
+    width:fit-content
+}
+.localLinks ul li {
+    width: fit-content;
+}
+.localLinks ul li::after{     /*::after mean fter all css done of locallinks work this */
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background-color: dodgerblue;
+    transform-origin: right;  /*test it later */
+    transform: scale(0, 5);
+    transition: transform 1000ms ease-in-out;
+}
+.localLinks ul li:hover::after{
+    transform-origin: left;
+    transform: scale(1,2);
+}
+.socialLinks ul{
+    display: flex;
+    flex-direction: row;
+    border-top: 5px solid rgb(14, 12, 12);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.socialLinks ul li {
+    margin-right: 15px;
+    transform-origin: center;
+    transition: transform 100ms ease-in-out;
+}
+.socialLinks ul li:hover {
+    transform: scale(1.20);
+}
+.socialLinks ul li a, .socialLinks a {
+    color: rgb(106, 181, 30);
+    text-decoration: none;
+}
+.socialLinks a {
+    display: flex;
+    flex-direction: row;
+}
+.socialLinks a p {
+    margin-left: 10px;
+    width: fit-content;
+}
+.socialLinks a p::after {
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background-color: whitesmoke;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform 250ms ease-in-out;
+}
+.socialLinks a:hover p::after {
+    transform-origin: left;
+    transform: scale(1, 1);
+}
+
+@media (max-width: 500px) {
+    .localLinks li {
+        margin: 5px 0;
+    }
+}
