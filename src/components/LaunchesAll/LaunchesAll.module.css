@@ -1,0 +1,66 @@
+.container {
+    background-color: violet;
+    color: whitesmoke;
+    padding: 40px 7%;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.heading {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters button, .more {
+    margin: 10px 10px;
+    width: 80px;
+    height: 30px;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid red;
+    border-radius: 8px;
+    box-shadow: 0 0 4px black;
+    cursor: pointer;
+}
+.filters button:hover {
+    background-color: rgba(245, 245, 245, 0.1);
+}
+
+.launches {
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 4px black;
+    padding: 20px 20px 0;
+}
+
+.more {
+    width: fit-content;
+    height: auto;
+    padding: 5px 30px;
+    font-size: 1.2em;
+    margin: 20px auto;
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .launches {
+        padding: 3px;
+        border: none;
+        box-shadow: none;
+    }
+    .filters {
+        margin-left: 15px;
+    }
+    .heading {
+        margin-left: 15px;
+    }
+}

@@ -4,9 +4,9 @@
     flex-direction: row;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid whitesmoke;
+    border: 3px solid red;
     border-radius: 10px;
-    box-shadow: 0 0 4px whitesmoke;
+    box-shadow: 0 0 4px black;
 }
 .missionPatchSmall{
     display: flex;
@@ -44,10 +44,10 @@
     margin: 0 auto;
 }
 .success{
-    color: chartreuse;
+    color: rgb(137, 255, 20);
 }
 .failure{
-    color: crimson;
+    color: rgb(255, 0, 51);
 }
 .links{
     display: flex;
@@ -71,12 +71,12 @@
     transform: scale(1.1);
 }
 .detailsLink{
-    color: rgb(86, 18, 18);
+    color: rgb(153, 156, 175);
     text-decoration: underline;
     cursor: pointer;
 }
 .detailsLink a{
-    color: rgb(206, 117, 117);
+    color: rgb(32, 137, 35);
 }
 .videoLink, .articleLink{
     font-size: 1.4em;
@@ -84,7 +84,7 @@
 }
 
 .videoLink {
-    color: tomato;
+    color: rgb(179, 35, 35);
 }
 .articleLink {
     color: rgb(86, 86, 72);

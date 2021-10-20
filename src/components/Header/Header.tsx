@@ -16,7 +16,7 @@ export const Header = () => {
         <div className={styles.navBar} data-testid="header">
             <div className={styles.logo}>
                 <Link to="/">
-                    <img src={logo} alt="logo" title="Home" className={styles.logo} /> SpaceX
+                    <img src={logo} alt="logo" title="Home" className={styles.logo} />
                 </Link>
             </div>
             <label htmlFor="openOrClose" className={styles.menuBtn}>
@@ -33,22 +33,17 @@ export const Header = () => {
                         <FaHome /> Home
                     </button>
                 </Link>
-                <Link to="/" className={styles.activeLink}>
+                <Link to="launches-all/" className={styles.activeLink}>
                     <button className={styles.link} data-testid="launches-button">
                         <GoRocket /> Launches
                     </button>
                 </Link>
-                <Link to="/" className={styles.activeLink}>
-                    <button className={styles.link} data-testid="rockets-button">
-                        <AiFillRocket /> Rockets
-                    </button>
-                </Link>
-                <Link to="/" className={styles.activeLink}>
+                <Link to="/history" className={styles.activeLink}>
                     <button className={styles.link} data-testid="history-button">
                         <FaHistory /> History
                     </button>
                 </Link>
-                <Link to="/" className={styles.activeLink}>
+                <Link to="/about" className={styles.activeLink}>
                     <button className={styles.link} data-testid="about-button">
                         <BsInfoCircleFill /> About
                     </button>

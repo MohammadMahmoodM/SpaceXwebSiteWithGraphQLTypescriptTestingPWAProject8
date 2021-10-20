@@ -1,0 +1,107 @@
+.container {
+    background-color: violet;
+    color: whitesmoke;
+    padding: 40px 7%;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.patchAndTitle {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.patchAndTitle img {
+    height: 100px;
+    margin-right: 5px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.heading {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.title div {
+    display: flex;
+    flex-direction: row;
+}
+.title div p:first-of-type {
+    margin-right: 10px;
+}
+.title div p:last-of-type {
+    margin: 0 auto;
+}
+.success {
+    color: #0df70d;
+}
+.failure {
+    color: #fb240d;
+}
+
+table {
+    margin-bottom: 50px;
+    border-spacing: 0;
+}
+.c1 {
+    min-width: 125px;
+}
+tr:nth-child(odd) {
+    background-color: rgba(14, 1, 1, 0.1);
+    border-collapse: collapse;
+}
+td {
+    padding: 3px 5px;
+}
+td:nth-child(odd) {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+td:nth-child(even) {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+td a {
+    color: rgb(39, 29, 29);
+    text-decoration: none;
+}
+
+.videoLink, .articleLink, .wikiLink {
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-right: 15px;
+}
+.links span {
+    transition: transform 150ms ease-in-out;
+}
+.links span:hover {
+    transform: scale(1.1);
+}
+.videoLink {
+    color: #ff0000;
+}
+.wikiLink, .articleLink {
+    color: rgb(34, 31, 31);
+}
+
+.images {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.image {
+    margin: 20px 0;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 40px 4%;
+    }
+}
