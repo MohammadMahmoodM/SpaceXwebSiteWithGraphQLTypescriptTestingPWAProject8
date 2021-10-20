@@ -23,11 +23,6 @@ export const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/rockets">
-                            Rocktes
-                        </Link>
-                    </li>
-                    <li>
                         <Link to="/history">
                             History
                         </Link>

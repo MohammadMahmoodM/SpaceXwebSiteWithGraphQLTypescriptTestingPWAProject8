@@ -1,8 +1,8 @@
 import React from 'react';
-import spacexLogo from '../../images/spacexLogo.jpg';
-import ElonMusk from '../../images/ElonMusk.jpg';
-import GwynneShotwell from '../../images/GwynneShotwell.jpg';
-import TomMueller from '../../images/TomMueller.jpg';
+import spacexLogo from '../../images/spacexLogo.96afe8f6.jpg';
+import ElonMusk from '../../images/elon.2c9f684f.jpg';
+import GwynneShotwell from '../../images/shotwell.9cedd0ee.jpg';
+import TomMueller from '../../images/tom.fd77617a.jpg';
 import styles from './About.module.css';
 
 const persons = [
