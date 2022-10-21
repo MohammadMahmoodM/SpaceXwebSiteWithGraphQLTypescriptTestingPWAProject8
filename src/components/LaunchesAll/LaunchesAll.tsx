@@ -1,4 +1,3 @@
-import { clear } from 'console';
 import React, { useState } from 'react';
 import { useAllLaunchesIdsQuery, Order, LaunchRange } from '../../api/index';
 import { Message } from '../../react-app-env.d';
